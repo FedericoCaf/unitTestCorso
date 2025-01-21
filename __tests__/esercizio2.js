@@ -1,34 +1,5 @@
 const { describe } = require("node:test");
 
-// function loginFn(email, password) {
-//     if (!email) {
-//         throw new Error("Email is required");
-//     }
-
-//     email = email.trim();
-//     if (!email) {
-//         throw new Error("Email must not have empty space");
-//     }
-
-//     const emailRegex = /\S+@\S+\.\S+/;
-//     if (!emailRegex.test(email)) {
-//         throw new Error("Invalid email format");
-//     }
-
-//     if (email.length > 20) {
-//         throw new Error("Email is too long");
-//     }
-
-//     if (!password) {
-//         throw new Error("Password is required");
-//     }
-
-//     password = password.trim();
-//     if (!password) {
-//         throw new Error("Password must not have empty space");
-//     }
-//     return "Validation passed";
-// }
 
 function loginFn(email, password) {
     if (!email) {
