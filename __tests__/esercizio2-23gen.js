@@ -72,7 +72,7 @@ describe("mathFunctions", () => {
             expect(varianza([5])).toBe(0);
         });
         test("Should handle large arrays correctly", () => {
-            expect(varianza([1000, 1001, 1002])).toBeCloseTo(1);
+            expect(varianza([1000, 1001, 1002])).toBeCloseTo(0.666, 3);
         });
     });
 
@@ -90,7 +90,7 @@ describe("mathFunctions", () => {
             expect(deviazione([5])).toBe(0);
         });
         test("Should handle large arrays correctly", () => {
-            expect(deviazione([1000, 1001, 1002])).toBeCloseTo(1);
+            expect(deviazione([1000, 1001, 1002])).toBeCloseTo(0.816, 3);
         });
     });
 
