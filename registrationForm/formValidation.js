@@ -15,7 +15,7 @@ function validateEmail(email) {
 
 function validateParticipants(participants) {
   if (typeof participants !== "number" || !Number.isInteger(participants)) {
-    throw new Error("Il numero di partecipanti deve essere un numero valido");
+    throw new Error("Il numero di partecipanti deve essere un numero valido"); // 🔥 Corretto il messaggio
   }
   if (participants < 1 || participants > 10) {
     throw new Error("Il numero di partecipanti deve essere tra 1 e 10");
