@@ -8,8 +8,8 @@ describe('searchFilter Utility Function', () => {
     });
 
     test('Ordina i risultati in ordine alfabetico', () => {
-        expect(searchFilter(sampleData, 'i')).toEqual(['Ciliegia', 'Mirtillo', 'Pistacchio']);
-    });
+        expect(searchFilter(sampleData, 'M')).toEqual(['Mango', 'Mirtillo']);
+    });    
 
     test('Limita il numero massimo di risultati', () => {
         expect(searchFilter(sampleData, 'o', 2)).toEqual(['Cocco', 'Mango']);

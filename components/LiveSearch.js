@@ -11,7 +11,7 @@ const LiveSearch = ({ data }) => {
         setTimeout(() => setLoading(false), 300);
     };
 
-    const results = searchFilter(data, query, 5);
+    const results = searchFilter(data, query, 10);
 
     return (
         <div className="p-4 max-w-lg mx-auto">
